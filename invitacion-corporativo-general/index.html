@@ -1,0 +1,658 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summit Tech 2026 · TechCorp Colombia</title>
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Summit Tech 2026 — 6 Dic" />
+  <meta property="og:description" content="Conferencia de Innovación Tecnológica de TechCorp Colombia. Domingo 6 de Diciembre de 2026 · Salón de Eventos Milán, Bogotá. Speakers, workshops y networking de alto nivel." />
+  <meta property="og:image"       content="img/fotos/img (1).png" />
+  <meta name="theme-color"        content="#0D1117" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,4 93,27 93,73 50,96 7,73 7,27' fill='none' stroke='%2300BCD4' stroke-width='6'/%3E%3Cpolygon points='50,22 75,36 75,64 50,78 25,64 25,36' fill='%2300BCD4' opacity='0.35'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%2300BCD4'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar" role="navigation" aria-label="Menú principal">
+    <div class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" fill="none" stroke="#00BCD4" stroke-width="1.5"/>
+        <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" fill="#00BCD4" opacity="0.35"/>
+        <circle cx="12" cy="12" r="2.5" fill="#00BCD4"/>
+      </svg>
+      <span>TechCorp</span>
+    </div>
+    <div class="nav-links" role="list">
+      <a href="#agenda">Agenda</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#registro">Registro</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-drawer" id="nav-drawer" role="dialog">
+    <a href="#agenda">Agenda</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#sponsors">Sponsors</a>
+    <a href="#registro">Registro</a>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero" aria-label="Portada del evento">
+    <canvas id="network-canvas" aria-hidden="true"></canvas>
+    <img src="img/fotos/home.png" alt="" class="hero-bg-img" aria-hidden="true" loading="eager" decoding="async" />
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span id="hero-days-remaining">— </span>días para el evento
+      </div>
+      <p class="hero-company">TechCorp Colombia</p>
+      <h1 class="hero-title">Summit Tech<br><span class="hero-year">2026</span></h1>
+      <p class="hero-type">Conferencia de Innovación Tecnológica</p>
+      <div class="hero-meta">
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Domingo 6 de Diciembre · 2026
+        </span>
+        <span class="hero-meta-sep" aria-hidden="true">·</span>
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          8:00 AM — 6:00 PM
+        </span>
+        <span class="hero-meta-sep" aria-hidden="true">·</span>
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Salón de Eventos Milán · Bogotá
+        </span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#registro" class="btn btn-cyan">Registrarse</a>
+        <a href="#agenda" class="btn btn-outline">Ver Agenda</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ACERCA ══ -->
+  <section id="acerca" class="section section-dark" aria-label="Acerca del evento">
+    <div class="section-header reveal">
+      <p class="s-pre">Sobre el evento</p>
+      <h2 class="s-title">Acerca de Summit Tech 2026</h2>
+      <div class="cyan-bar"></div>
+    </div>
+    <div class="about-content reveal reveal-d1">
+      <p class="about-text">Summit Tech 2026 reúne a los líderes de la industria tecnológica de Colombia para explorar el futuro de la innovación. Una jornada de networking, conocimiento y conexiones que transformarán tu visión del negocio.</p>
+    </div>
+    <div class="about-stats reveal reveal-d2">
+      <div class="about-stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Speakers</span>
+      </div>
+      <div class="about-stat">
+        <span class="stat-num">8</span>
+        <span class="stat-label">Sesiones</span>
+      </div>
+      <div class="about-stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Día</span>
+      </div>
+      <div class="about-stat">
+        <span class="stat-num">10h</span>
+        <span class="stat-label">De contenido</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ AGENDA ══ -->
+  <section id="agenda" class="section section-alt" aria-label="Agenda del evento">
+    <div class="section-header">
+      <p class="s-pre reveal">Domingo 6 de Diciembre · 2026</p>
+      <h2 class="s-title reveal reveal-d1">Agenda</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+    <div class="agenda-timeline">
+
+      <div class="agenda-item reveal">
+        <div class="agenda-time">8:00 AM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot"></div>
+          <div class="agenda-line"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Registro y Acreditación</h4>
+          <p>Ingreso de asistentes y entrega de credenciales</p>
+        </div>
+      </div>
+
+      <div class="agenda-item reveal reveal-d1">
+        <div class="agenda-time">9:00 AM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot"></div>
+          <div class="agenda-line"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Conferencia Inaugural</h4>
+          <p>"El futuro de la IA en los negocios"</p>
+          <span class="agenda-tag">Keynote</span>
+        </div>
+      </div>
+
+      <div class="agenda-item reveal reveal-d2">
+        <div class="agenda-time">10:30 AM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot agenda-dot--light"></div>
+          <div class="agenda-line"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Break &amp; Networking</h4>
+          <p>Café y espacio de conexión entre asistentes</p>
+          <span class="agenda-tag agenda-tag--network">Networking</span>
+        </div>
+      </div>
+
+      <div class="agenda-item reveal reveal-d3">
+        <div class="agenda-time">11:00 AM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot"></div>
+          <div class="agenda-line"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Panel de Expertos</h4>
+          <p>"Transformación Digital en Latinoamérica"</p>
+          <span class="agenda-tag">Panel</span>
+        </div>
+      </div>
+
+      <div class="agenda-item reveal">
+        <div class="agenda-time">1:00 PM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot agenda-dot--light"></div>
+          <div class="agenda-line"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Almuerzo de Networking</h4>
+          <p>Gastronomía y conexiones estratégicas</p>
+          <span class="agenda-tag agenda-tag--network">Networking</span>
+        </div>
+      </div>
+
+      <div class="agenda-item reveal reveal-d1">
+        <div class="agenda-time">2:30 PM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot"></div>
+          <div class="agenda-line"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Workshops Paralelos</h4>
+          <p>Sala A · Sala B — Sesiones especializadas simultáneas</p>
+          <span class="agenda-tag">Workshop</span>
+        </div>
+      </div>
+
+      <div class="agenda-item reveal reveal-d2">
+        <div class="agenda-time">4:30 PM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot"></div>
+          <div class="agenda-line"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Keynote de Cierre</h4>
+          <p>Reflexiones finales y visión de futuro</p>
+          <span class="agenda-tag">Keynote</span>
+        </div>
+      </div>
+
+      <div class="agenda-item agenda-item--last reveal reveal-d3">
+        <div class="agenda-time">5:30 PM</div>
+        <div class="agenda-connector">
+          <div class="agenda-dot agenda-dot--cyan"></div>
+        </div>
+        <div class="agenda-content">
+          <h4>Cóctel de Clausura</h4>
+          <p>Celebración final con ponentes y patrocinadores</p>
+          <span class="agenda-tag agenda-tag--network">Social</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ SPEAKERS ══ -->
+  <section id="speakers" class="section section-dark" aria-label="Ponentes">
+    <div class="section-header">
+      <p class="s-pre reveal">Voces que transforman</p>
+      <h2 class="s-title reveal reveal-d1">Speakers</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+    <div class="speakers-grid">
+
+      <div class="speaker-card reveal reveal-d1">
+        <div class="speaker-photo speaker-photo--1" aria-hidden="true">
+          <span>CM</span>
+        </div>
+        <div class="speaker-info">
+          <h4 class="speaker-name">Dr. Carlos Mendoza</h4>
+          <p class="speaker-role">CEO · InnovateLab</p>
+          <p class="speaker-talk">"El futuro de la IA en negocios"</p>
+          <a href="#" class="speaker-li" aria-label="LinkedIn de Carlos Mendoza">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="speaker-card reveal reveal-d2">
+        <div class="speaker-photo speaker-photo--2" aria-hidden="true">
+          <span>MFR</span>
+        </div>
+        <div class="speaker-info">
+          <h4 class="speaker-name">María Fernanda Ruiz</h4>
+          <p class="speaker-role">CTO · DigitalCo</p>
+          <p class="speaker-talk">"Cloud y Transformación"</p>
+          <a href="#" class="speaker-li" aria-label="LinkedIn de María Fernanda Ruiz">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="speaker-card reveal reveal-d3">
+        <div class="speaker-photo speaker-photo--3" aria-hidden="true">
+          <span>AV</span>
+        </div>
+        <div class="speaker-info">
+          <h4 class="speaker-name">Alejandro Vargas</h4>
+          <p class="speaker-role">Founder · StartupX</p>
+          <p class="speaker-talk">"Emprendimiento Tech"</p>
+          <a href="#" class="speaker-li" aria-label="LinkedIn de Alejandro Vargas">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="speaker-card reveal reveal-d4">
+        <div class="speaker-photo speaker-photo--4" aria-hidden="true">
+          <span>ALO</span>
+        </div>
+        <div class="speaker-info">
+          <h4 class="speaker-name">Ana Lucía Ospina</h4>
+          <p class="speaker-role">Head of Data · DataCorp</p>
+          <p class="speaker-talk">"Analytics para decisiones"</p>
+          <a href="#" class="speaker-li" aria-label="LinkedIn de Ana Lucía Ospina">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ GALERÍA ══ -->
+  <section id="galeria" class="section section-alt" aria-label="Galería">
+    <div class="section-header">
+      <p class="s-pre reveal">Ediciones anteriores</p>
+      <h2 class="s-title reveal reveal-d1">Galería</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+    <div class="gallery-grid" role="list">
+      <div class="gallery-item reveal reveal-d1" role="listitem">
+        <img src="img/fotos/img (1).png" alt="Summit Tech — edición anterior" loading="lazy" decoding="async" />
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal reveal-d2" role="listitem">
+        <img src="img/fotos/img (2).png" alt="Summit Tech — edición anterior" loading="lazy" decoding="async" />
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal reveal-d3" role="listitem">
+        <img src="img/fotos/img (3).png" alt="Summit Tech — edición anterior" loading="lazy" decoding="async" />
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal reveal-d4" role="listitem">
+        <img src="img/fotos/img (4).png" alt="Summit Tech — edición anterior" loading="lazy" decoding="async" />
+        <div class="gallery-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ VENUE ══ -->
+  <section id="venue" class="section section-dark" aria-label="Lugar del evento">
+    <div class="section-header">
+      <p class="s-pre reveal">Sede del evento</p>
+      <h2 class="s-title reveal reveal-d1">Venue</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+    <div class="venue-block reveal reveal-d3">
+      <div class="venue-info">
+        <h3 class="venue-name">Salón de Eventos Milán</h3>
+        <p class="venue-address">Bogotá, Colombia</p>
+        <div class="venue-meta">
+          <span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Domingo 6 de Diciembre · 2026
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            8:00 AM — 6:00 PM
+          </span>
+        </div>
+        <div class="venue-actions">
+          <a href="https://share.google/Hwx3yN2UhIyH1Enzh" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ver en Maps
+          </a>
+          <button class="btn btn-outline-sm" id="btn-dresscode" type="button">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+            Ver código de vestimenta
+          </button>
+        </div>
+      </div>
+      <div class="venue-map">
+        <iframe
+          src="https://www.google.com/maps?q=2.481158,-76.5693802&hl=es&z=18&output=embed"
+          width="100%" height="100%" style="border:0;"
+          allowfullscreen="" loading="lazy"
+          title="Salón de Eventos Milán · Bogotá, Colombia">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SPONSORS ══ -->
+  <section id="sponsors" class="section section-alt" aria-label="Patrocinadores">
+    <div class="section-header">
+      <p class="s-pre reveal">Empresas que hacen posible este evento</p>
+      <h2 class="s-title reveal reveal-d1">Sponsors</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+
+    <div class="sponsors-tier reveal reveal-d1">
+      <p class="sponsors-tier-label sponsors-tier-label--platinum">Platino</p>
+      <div class="sponsors-row sponsors-row--platinum">
+        <div class="sponsor-logo sponsor-logo--lg">
+          <span>PLATINUM SPONSOR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sponsors-tier reveal reveal-d2">
+      <p class="sponsors-tier-label sponsors-tier-label--gold">Oro</p>
+      <div class="sponsors-row">
+        <div class="sponsor-logo">
+          <span>GOLD SPONSOR</span>
+        </div>
+        <div class="sponsor-logo">
+          <span>GOLD SPONSOR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sponsors-tier reveal reveal-d3">
+      <p class="sponsors-tier-label sponsors-tier-label--silver">Plata</p>
+      <div class="sponsors-row">
+        <div class="sponsor-logo sponsor-logo--sm">
+          <span>SILVER SPONSOR</span>
+        </div>
+        <div class="sponsor-logo sponsor-logo--sm">
+          <span>SILVER SPONSOR</span>
+        </div>
+        <div class="sponsor-logo sponsor-logo--sm">
+          <span>SILVER SPONSOR</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ REGISTRO ══ -->
+  <section id="registro" class="section section-dark" aria-label="Registro al evento">
+    <div class="section-header">
+      <p class="s-pre reveal">Cupos limitados · Fecha límite: 22 de Noviembre de 2026</p>
+      <h2 class="s-title reveal reveal-d1">Registrarse</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+    <div class="registro-block reveal reveal-d3">
+      <p class="registro-desc">Completa tu registro para confirmar tu lugar en Summit Tech 2026. Cupos limitados.</p>
+      <a
+        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Summit%20Tech%202026%20%E2%80%94%20TechCorp%20Colombia&dates=20260828T130000Z%2F20260829T010000Z&details=Conferencia%20de%20Innovaci%C3%B3n%20Tecnol%C3%B3gica%20de%20TechCorp%20Colombia.%20Speakers%2C%20workshops%20y%20networking%20de%20alto%20nivel.&location=Sal%C3%B3n%20de%20Eventos%20Mil%C3%A1n%2C%20Bogot%C3%A1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-calendar"
+        aria-label="Agregar al calendario"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Agregar al calendario
+      </a>
+      <button class="btn-share" id="btn-share" aria-label="Compartir evento"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Compartir evento</button>
+      <a
+        href="https://wa.me/573128622945?text=Hola!%20Confirmo%20mi%20asistencia%20a%20Summit%20Tech%202026%20el%20domingo%206%20de%20Diciembre%20de%202026"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-cyan btn-lg"
+        aria-label="Registrarse por WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Confirmar registro por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ QR DE ACCESO ══ -->
+  <section id="qr-acceso" class="section section-alt" aria-label="QR de acceso">
+    <div class="section-header">
+      <p class="s-pre reveal">Tu pase digital</p>
+      <h2 class="s-title reveal reveal-d1">QR de Acceso</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+    <div class="qr-block reveal reveal-d3">
+      <div class="qr-image-wrap">
+        <img src="img/fotos/QR Fotos.png" alt="QR de acceso al evento" class="qr-img" loading="lazy" decoding="async" />
+      </div>
+      <p class="qr-text">Al confirmar tu registro recibirás tu QR de acceso personalizado para el evento. Preséntalo en la acreditación el día del Summit Tech 2026.</p>
+    </div>
+  </section>
+
+  <!-- ══ CONTACTO ══ -->
+  <section id="contacto" class="section section-dark" aria-label="Contacto">
+    <div class="section-header">
+      <p class="s-pre reveal">¿Preguntas sobre el evento?</p>
+      <h2 class="s-title reveal reveal-d1">Contacto</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+    <div class="contacto-block reveal reveal-d3">
+      <p class="contacto-text">¿Tienes preguntas sobre el evento? Escribinos y te respondemos a la brevedad.</p>
+      <a href="https://wa.me/573128622945" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" fill="none" stroke="#00BCD4" stroke-width="1.5"/>
+          <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" fill="#00BCD4" opacity="0.35"/>
+          <circle cx="12" cy="12" r="2.5" fill="#00BCD4"/>
+        </svg>
+        <span>Summit Tech 2026</span>
+      </div>
+      <p class="footer-company">TechCorp Colombia</p>
+      <p class="footer-date">Domingo 6 de Diciembre · 2026</p>
+      <p class="footer-tagline">Conectando el futuro de la tecnología</p>
+    </div>
+  </footer>
+  <div class="footer-credit">
+    <p>© 2026 · Desarrollado por <span>Juan Camilo Zarta Campo</span> &nbsp;|&nbsp; <span>GOLDEN PANDA</span></p>
+  </div>
+
+  <!-- ══ PLANES ══ -->
+  <section id="planes" class="section section-planes" aria-label="Planes Golden Panda">
+    <div class="section-header">
+      <p class="s-pre s-pre--dark reveal">Crea tu invitación corporativa</p>
+      <h2 class="s-title s-title--dark reveal reveal-d1">Nuestros Planes</h2>
+      <div class="cyan-bar reveal reveal-d2"></div>
+    </div>
+
+    <div class="planes-grid">
+
+      <div class="plan-card reveal reveal-d1">
+        <p class="plan-tier">Bronce</p>
+        <div class="plan-price-block">
+          <span class="plan-amount">$199.000</span>
+          <span class="plan-cur">COP</span>
+        </div>
+        <div class="plan-rule"></div>
+        <ul class="plan-features">
+          <li>Hero con nombre del evento</li>
+          <li>Logo básico</li>
+          <li>Agenda básica</li>
+          <li>Galería de fotos</li>
+          <li>Confirmación por WhatsApp</li>
+          <li>Entrega 2–3 días</li>
+        </ul>
+        <a href="https://api.whatsapp.com/send/?phone=573128622945&text=Hola!%20Me%20interesa%20el%20Plan%20Bronce%20(%24199.000%20COP)%20para%20un%20evento%20corporativo.%20%C2%BFMe%20dan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="plan-cta">Consultar plan</a>
+      </div>
+
+      <div class="plan-card plan-card--featured reveal reveal-d2">
+        <p class="plan-badge">Más Popular</p>
+        <p class="plan-tier">Platino</p>
+        <div class="plan-price-block">
+          <span class="plan-amount">$259.000</span>
+          <span class="plan-cur">COP</span>
+        </div>
+        <div class="plan-rule"></div>
+        <ul class="plan-features">
+          <li>Todo lo del Bronce</li>
+          <li>Branding completo</li>
+          <li>Agenda detallada</li>
+          <li>Speakers con perfiles</li>
+          <li>Mapa embebido</li>
+          <li>Dress code</li>
+          <li>Animaciones</li>
+          <li>Pieza gráfica</li>
+          <li>Entrega 3–5 días</li>
+        </ul>
+        <a href="https://api.whatsapp.com/send/?phone=573128622945&text=Hola!%20Me%20interesa%20el%20Plan%20Platino%20(%24259.000%20COP)%20para%20un%20evento%20corporativo.%20%C2%BFMe%20dan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="plan-cta plan-cta--fill">Consultar plan</a>
+      </div>
+
+      <div class="plan-card plan-card--premium reveal reveal-d3">
+        <p class="plan-tier">Diamante</p>
+        <div class="plan-price-block">
+          <span class="plan-amount">$329.000</span>
+          <span class="plan-cur">COP</span>
+        </div>
+        <div class="plan-rule"></div>
+        <ul class="plan-features">
+          <li>Todo lo del Platino</li>
+          <li>QR de acceso</li>
+          <li>Formulario de registro</li>
+          <li>Sponsors</li>
+          <li>Soporte hasta el evento</li>
+          <li>Entrega 4–6 días</li>
+        </ul>
+        <a href="https://api.whatsapp.com/send/?phone=573128622945&text=Hola!%20Me%20interesa%20el%20Plan%20Diamante%20(%24329.000%20COP)%20para%20un%20evento%20corporativo.%20%C2%BFMe%20dan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="plan-cta">Consultar plan</a>
+      </div>
+
+    </div>
+
+    <div class="planes-contact reveal">
+      <p>¿Quieres un presupuesto personalizado para tu evento corporativo?</p>
+      <a href="https://api.whatsapp.com/send/?phone=573128622945&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20invitaciones%20digitales%20para%20eventos%20corporativos." target="_blank" rel="noopener noreferrer" class="btn btn-dark-inv">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Contactar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ MODAL DRESS CODE ══ -->
+  <div id="dresscode-modal" role="dialog" aria-modal="true" aria-label="Código de vestimenta">
+    <div class="modal-inner">
+      <button class="modal-close" id="dresscode-modal-close" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#00BCD4" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+      </div>
+      <h3 class="modal-title">Código de Vestimenta</h3>
+      <div class="modal-sep"></div>
+      <ul class="modal-list">
+        <li>
+          <strong>Vestimenta:</strong> Business Formal
+        </li>
+        <li>
+          <strong>Hombres:</strong> Traje o blazer
+        </li>
+        <li>
+          <strong>Mujeres:</strong> Vestido formal o traje
+        </li>
+        <li>
+          <strong>Evitar:</strong> Ropa casual o deportiva
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══ LIGHTBOX ══ -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Galería ampliada">
+    <button class="lb-btn" id="lb-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lb-btn" id="lb-prev" aria-label="Anterior">&#8249;</button>
+    <button class="lb-btn" id="lb-next" aria-label="Siguiente">&#8250;</button>
+    <img id="lb-img" src="" alt="Galería Summit Tech" />
+  </div>
+
+  <!-- ══ WA FLOAT ══ -->
+  <a href="https://wa.me/573128622945" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script>
+(function(){
+  const btn = document.getElementById('btn-share');
+  if (!btn) return;
+  btn.addEventListener('click', async () => {
+    const data = { title: 'Summit Tech 2026 — TechCorp Colombia', text: 'Conferencia de Innovación Tecnológica · Domingo 6 de Diciembre de 2026 · Salón de Eventos Milán, Bogotá', url: window.location.href };
+    if (navigator.share) { try { await navigator.share(data); } catch(_) {} }
+    else {
+      await navigator.clipboard.writeText(window.location.href);
+      btn.textContent = '¡Link copiado!';
+      setTimeout(() => btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Compartir evento', 2500);
+    }
+  });
+})();
+  </script>
+</body>
+</html>
