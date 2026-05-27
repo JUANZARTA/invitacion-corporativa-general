@@ -37,7 +37,7 @@
       <a href="#agenda">Agenda</a>
       <a href="#speakers">Speakers</a>
       <a href="#sponsors">Sponsors</a>
-      <a href="#registro">Registro</a>
+      <a href="#registro">Confirmar</a>
     </div>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -48,7 +48,7 @@
     <a href="#agenda">Agenda</a>
     <a href="#speakers">Speakers</a>
     <a href="#sponsors">Sponsors</a>
-    <a href="#registro">Registro</a>
+    <a href="#registro">Confirmar</a>
   </div>
 
   <!-- ══ HERO ══ -->
@@ -79,7 +79,7 @@
         </span>
       </div>
       <div class="hero-ctas">
-        <a href="#registro" class="btn btn-cyan">Registrarse</a>
+        <a href="#registro" class="btn btn-cyan">Confirmar</a>
         <a href="#agenda" class="btn btn-outline">Ver Agenda</a>
       </div>
     </div>
@@ -239,8 +239,8 @@
     <div class="speakers-grid">
 
       <div class="speaker-card reveal reveal-d1">
-        <div class="speaker-photo speaker-photo--1" aria-hidden="true">
-          <span>CM</span>
+        <div class="speaker-photo">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Carlos Mendoza" loading="lazy" />
         </div>
         <div class="speaker-info">
           <h4 class="speaker-name">Dr. Carlos Mendoza</h4>
@@ -254,8 +254,8 @@
       </div>
 
       <div class="speaker-card reveal reveal-d2">
-        <div class="speaker-photo speaker-photo--2" aria-hidden="true">
-          <span>MFR</span>
+        <div class="speaker-photo">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María Fernanda Ruiz" loading="lazy" />
         </div>
         <div class="speaker-info">
           <h4 class="speaker-name">María Fernanda Ruiz</h4>
@@ -269,8 +269,8 @@
       </div>
 
       <div class="speaker-card reveal reveal-d3">
-        <div class="speaker-photo speaker-photo--3" aria-hidden="true">
-          <span>AV</span>
+        <div class="speaker-photo">
+          <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Alejandro Vargas" loading="lazy" />
         </div>
         <div class="speaker-info">
           <h4 class="speaker-name">Alejandro Vargas</h4>
@@ -284,8 +284,8 @@
       </div>
 
       <div class="speaker-card reveal reveal-d4">
-        <div class="speaker-photo speaker-photo--4" aria-hidden="true">
-          <span>ALO</span>
+        <div class="speaker-photo">
+          <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Ana Lucía Ospina" loading="lazy" />
         </div>
         <div class="speaker-info">
           <h4 class="speaker-name">Ana Lucía Ospina</h4>
@@ -391,7 +391,9 @@
       <p class="sponsors-tier-label sponsors-tier-label--platinum">Platino</p>
       <div class="sponsors-row sponsors-row--platinum">
         <div class="sponsor-logo sponsor-logo--lg">
-          <span>PLATINUM SPONSOR</span>
+          <svg class="sponsor-svg" viewBox="0 0 240 48" xmlns="http://www.w3.org/2000/svg" aria-label="Samsung">
+            <text x="120" y="34" text-anchor="middle" font-family="'Inter','Arial Black',sans-serif" font-weight="800" font-size="26" letter-spacing="6" fill="rgba(255,255,255,0.75)">SAMSUNG</text>
+          </svg>
         </div>
       </div>
     </div>
@@ -400,10 +402,18 @@
       <p class="sponsors-tier-label sponsors-tier-label--gold">Oro</p>
       <div class="sponsors-row">
         <div class="sponsor-logo">
-          <span>GOLD SPONSOR</span>
+          <svg class="sponsor-svg" viewBox="0 0 180 48" xmlns="http://www.w3.org/2000/svg" aria-label="Google">
+            <text x="90" y="35" text-anchor="middle" font-family="'Inter','Arial',sans-serif" font-weight="500" font-size="28" fill="rgba(255,255,255,0.75)">Google</text>
+          </svg>
         </div>
         <div class="sponsor-logo">
-          <span>GOLD SPONSOR</span>
+          <svg class="sponsor-svg" viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg" aria-label="Microsoft">
+            <rect x="8" y="8" width="14" height="14" fill="rgba(255,255,255,0.55)"/>
+            <rect x="24" y="8" width="14" height="14" fill="rgba(255,255,255,0.55)"/>
+            <rect x="8" y="24" width="14" height="14" fill="rgba(255,255,255,0.55)"/>
+            <rect x="24" y="24" width="14" height="14" fill="rgba(255,255,255,0.55)"/>
+            <text x="118" y="34" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-weight="300" font-size="18" fill="rgba(255,255,255,0.75)">Microsoft</text>
+          </svg>
         </div>
       </div>
     </div>
@@ -412,13 +422,20 @@
       <p class="sponsors-tier-label sponsors-tier-label--silver">Plata</p>
       <div class="sponsors-row">
         <div class="sponsor-logo sponsor-logo--sm">
-          <span>SILVER SPONSOR</span>
+          <svg class="sponsor-svg" viewBox="0 0 160 44" xmlns="http://www.w3.org/2000/svg" aria-label="Amazon">
+            <text x="80" y="28" text-anchor="middle" font-family="'Inter','Arial',sans-serif" font-weight="400" font-size="20" fill="rgba(255,255,255,0.7)">amazon</text>
+            <path d="M38 35 Q80 46 122 35" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
         </div>
         <div class="sponsor-logo sponsor-logo--sm">
-          <span>SILVER SPONSOR</span>
+          <svg class="sponsor-svg" viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg" aria-label="IBM">
+            <text x="60" y="32" text-anchor="middle" font-family="'Inter','Arial Black',sans-serif" font-weight="900" font-size="28" letter-spacing="3" fill="rgba(255,255,255,0.75)">IBM</text>
+          </svg>
         </div>
         <div class="sponsor-logo sponsor-logo--sm">
-          <span>SILVER SPONSOR</span>
+          <svg class="sponsor-svg" viewBox="0 0 160 44" xmlns="http://www.w3.org/2000/svg" aria-label="Oracle">
+            <text x="80" y="31" text-anchor="middle" font-family="'Inter','Arial',sans-serif" font-weight="700" font-size="20" letter-spacing="2" fill="rgba(255,255,255,0.7)">ORACLE</text>
+          </svg>
         </div>
       </div>
     </div>
@@ -428,7 +445,7 @@
   <section id="registro" class="section section-dark" aria-label="Registro al evento">
     <div class="section-header">
       <p class="s-pre reveal">Cupos limitados · Fecha límite: 22 de Noviembre de 2026</p>
-      <h2 class="s-title reveal reveal-d1">Registrarse</h2>
+      <h2 class="s-title reveal reveal-d1">Confirmar Asistencia</h2>
       <div class="cyan-bar reveal reveal-d2"></div>
     </div>
     <div class="registro-block reveal reveal-d3">
